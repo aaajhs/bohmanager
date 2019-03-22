@@ -1,0 +1,90 @@
+<%- include('partials/header'); -%>
+
+<div class="content">
+  <div class="">
+    <h1><%= listTitle %></h1>
+  </div>
+
+  <div class="">
+    <h5>Urgent</h5>
+    <% for(let i = 0; i < newUrgent.length; i++){ %>
+    <div class="">
+      <input type="checkbox">
+      <p><%= newUrgent[i] %></p>
+    </div>
+    <% } %>
+    <div class="">
+      <form class="" action="/preplist" method="post">
+        <input type="text" name="newItemUrgent" placeholder="Enter a new item: ">
+        <button type="submit" name="button">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="">
+    <h5>Necessary</h5>
+    <% for(let i = 0; i < newNecessary.length; i++){ %>
+    <div class="">
+      <input type="checkbox">
+      <p><%= newNecessary[i] %></p>
+    </div>
+    <% } %>
+    <div class="">
+      <form class="" action="/preplist" method="post">
+        <input type="text" name="newItemNecessary" placeholder="Enter a new item: ">
+        <button type="submit" name="button">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="">
+    <h5>Extra</h5>
+    <% for(let i = 0; i < newExtra.length; i++){ %>
+    <div class="">
+      <input type="checkbox">
+      <p><%= newExtra[i] %></p>
+    </div>
+    <% } %>
+    <div class="">
+      <form class="" action="/preplist" method="post">
+        <input type="text" name="newItemExtra" placeholder="Enter a new item: ">
+        <button type="submit" name="button">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="">
+    <h5>Notes</h5>
+    <% for(let i = 0; i < newNotes.length; i++){ %>
+    <div class="">
+      <input type="checkbox">
+      <p><%= newNotes[i] %></p>
+    </div>
+    <% } %>
+    <div class="">
+      <form class="" action="/preplist" method="post">
+        <input type="text" name="newItemNotes" placeholder="Enter a new item: ">
+        <button type="submit" name="button">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="">
+    <h5>Order</h5>
+    <% for(let i = 0; i < newOrder.length; i++){ %>
+    <div class="">
+      <input type="checkbox">
+      <p><%= newOrder[i] %></p>
+    </div>
+    <% } %>
+    <div class="">
+      <form class="" action="/preplist" method="post">
+        <input type="text" name="newItemOrder" placeholder="Enter a new item: ">
+        <button type="submit" name="button">Submit</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+<%- include('partials/footer'); -%>

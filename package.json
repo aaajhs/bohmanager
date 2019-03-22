@@ -1,0 +1,16 @@
+{
+  "name": "kitchen-manager",
+  "version": "1.0.0",
+  "description": "Kitchen Manager designed specially for Le Majesthé.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Danny Jang",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}

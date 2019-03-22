@@ -1,0 +1,44 @@
+body {
+  /* background-color: #98ccbb; */
+  background-color: #FFF;
+  text-align: center;
+}
+
+/* Navbar */
+
+.logo-brand {
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar-adjustment {
+  background-color: #94c7b6;
+}
+
+
+/* Page Content */
+.content {
+  margin-top: 56px;
+}
+
+/* Footer */
+footer {
+  font-size: 0.8rem;
+}
+
+/* Media Queries */
+@media (min-width: 992px) {
+  .navbar-adjustment {
+    padding: 0.5rem 15%;
+  }
+
+  #content {
+    padding: 4.5rem 15% 0;
+  }
+}
+
+@media (max-width: 992px) {
+  #content {
+    padding: 4rem 0.5rem 0;
+    text-align: center;
+  }
+}
